@@ -128,11 +128,8 @@ p {
     
   }
 
-  .imageInterest{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  
+  
 
   .imageInterest img{
     width: 300px;
@@ -195,12 +192,7 @@ p {
     display: flex;
     flex-direction: row;
   }
-
-  .imageInterest{
-    display:flex;
-    flex-direction: column;
-  }
-
+  
   .imageInterest img{
     width: 350px;
     height: auto;
@@ -258,7 +250,6 @@ p {
     display: flex;
     flex-direction: row;
   }
-
 
   .imageInterest img{
     width: 400px;
@@ -371,8 +362,10 @@ article{
   color: white;
 }
 
+
 .imageInterest{
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   margin: 5%;
