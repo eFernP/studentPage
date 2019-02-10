@@ -122,9 +122,20 @@ p {
    
   }
 
+  
+  .imageSrc{
+    display: flex;
+    justify-content: center;
+    
+  }
   .imageInterest img{
-    width: 300px;
-    height: auto;
+    height: 250px;
+    width: auto;
+  }
+
+  .imageInterest p{
+    display: flex;
+    justify-content: center;
   }
 
   textarea{
