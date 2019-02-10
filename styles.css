@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=The+Girl+Next+Door');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:200');
+
+/* ---- reset ---- */
+
+/*
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}*/
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+html{
+  width: 100%;
+}
+
+/* ---- typography ---- */
+
+body {
+  color: #111;
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  background-color: rgb(253, 238, 240);;
+  
+}
+
+h1 {
+  font-family: Work Sans, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 2em;
+  
+}
+
+
+h2{
+  font-family: Work Sans, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 2em;
+}
+
+
+p {
+  margin: 0;
+}
+
+.container{
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
+/* ---- layout ---- */
+
+
+.section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+
+
+/* ---- components ---- */
+
+.button {
+  width: 100%;
+  background-color: blue;
+  color: #fff;
+  border: 1px solid #fff
+}
+
+
+/*---------My code--------*/
+
+@media (max-width: 819px) {
+
+  .containerAbout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10%;
+    
+  }
+
+  .imageEster{
+    display:flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  header{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    align-content: center;
+  }
+  
+  header h1{
+    font-size: 40px;
+    color: rgb(112, 87, 87);
+    text-align: center;
+  }
+
+  nav li{
+    margin: 0 10px;
+    letter-spacing: 1px;
+  }
+
+  .interestsSection{
+    padding: 30px 5%;
+   
+  }
+
+  .containerInterests{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .imageInterest{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .imageInterest img{
+    width: 300px;
+    height: auto;
+  }
+
+  textarea{
+    width: 250px;
+    max-width: 250px;
+    height:200px;
+    max-height: 200px;
+   
+  }
+
+  .contactSection{
+    
+    padding: 0 5%;
+    margin: 0;
+    
+  }
+
+
+}
+
+@media (min-width: 820px) and (max-width: 1200px) {
+
+  .containerAbout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    padding: 0 10%;
+    
+  }
+
+  header{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    align-content: center;
+  }
+  
+  header h1{
+    font-size: 60px;
+    color: rgb(112, 87, 87);
+    text-align: center;
+  }
+
+  nav li{
+    margin: 0 10px;
+    letter-spacing: 2px;
+  }
+
+  .interestsSection{
+    padding: 30px 5%;
+   
+  }
+
+  .containerInterests{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .imageInterest{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .imageInterest img{
+    width: 350px;
+    height: auto;
+    
+  }
+
+  .contactSection{
+    margin-top: 100px;
+    padding: 0 20%;
+    margin-bottom: 75px;
+  }
+
+  textarea{
+    width: 400px;
+    max-width: 400px;
+    height:200px;
+    max-height: 200px;
+   
+  }
+
+}
+
+@media (min-width: 1201px) {
+  .containerAbout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+  }
+
+  header{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    align-content: center;
+  }
+  
+  header h1{
+    font-size: 60px;
+    color: rgb(112, 87, 87);
+    text-align: center;
+  }
+
+  nav li{
+    margin: 0 10px;
+    letter-spacing: 2px;
+  }
+
+  .interestsSection{
+    padding: 30px 10%;
+   
+  }
+
+  .containerInterests{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .imageInterest img{
+    width: 400px;
+    height: auto;
+    
+  }
+
+  textarea{
+    width: 400px;
+    max-width: 400px;
+    height:200px;
+    max-height: 200px;
+  
+  }
+
+  .contactSection{
+    margin-top: 100px;
+    padding: 0 20%;
+    margin-bottom: 75px;
+  }
+
+  
+}
+
+
+.container{
+  display: flex;
+}
+
+nav{
+  background-color: rgb(207, 141, 158);
+  height: 75px;
+  margin: 0;
+  margin-bottom: 100px;
+  font-family: Work Sans, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+.navContainer{
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+nav li a{
+  transition-duration: 0.25s;
+ 
+}
+
+nav li a:hover{
+  font-size: 1.5em;
+ 
+}
+
+.navContainer li{
+  display: flex;
+  align-self: center;
+}
+
+.navContainer li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+
+article{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+.container h1{
+  display: flex;
+  justify-self: center;
+}
+
+
+
+.containerAbout img{
+  display: flex;
+  margin-right: 50px;
+}
+
+.containerAbout p{
+  display: flex;
+}
+
+
+.interestsSection{
+  margin-top: 100px;
+  background-color: rgb(255, 117, 124);
+  color: white;
+ 
+}
+
+.interestsText h1{
+  color: white;
+}
+
+.imageInterest{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  margin: 5%;
+}
+
+.imageInterest p{
+  font-style: italic;
+}
+
+.projectsSection{
+  margin-top: 100px;
+  padding: 0 20%;
+}
+
+.containerLine{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.line{
+  height: 2px;
+  background-color: rgb(207, 141, 158);
+  margin-top: 100px;
+  width: 75%;
+
+}
+
+.contactSection{
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+
+
+input{
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  border: solid 1px gray;
+  margin: 5px;
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+
+input{
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+}
+
+textarea{
+  margin: 5px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: solid 1px gray;
+  font-size: 14px;
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+}
+
+.containerSubmit{
+  display: flex;
+  width: 60%;
+  justify-content: flex-end;
+}
+
+#submitButton{
+  
+  width: 90px;
+  height: 50px;
+  background-color: rgb(248, 117, 124);
+  font-size: 1.2em;
+  color: white;
+  font-weight: 600;
+  border-radius: 3px;
+  transition-duration: 2s; 
+}
+
+#submitButton:hover{
+  background-color: rgb(255, 153, 158);
+  font-size: 1.2em;
+}
+
+
+footer{
+  background-color: rgb(207, 141, 158);
+  height: 50px;
+  font-weight: 700;
+  color: white;
+  display:flex;
+  justify-content: center;
+}
+
+
+.textFooter{
+  align-self: center;
+}

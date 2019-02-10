@@ -4,72 +4,83 @@
         <title>Ester's page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
+        <link rel="stylesheet" href="styles.css">
       </head>
 
 <body>
-
+  <header>
+        <h1>Welcome to Ester's page</h1>
+  </header>
   <nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#aboutSection">About me</a></li>
-      <li><a href="#interestsSection">Interests</a></li>
-      <li><a href="#projectsSection">Projects</a></li>
+      <div class="navContainer">
+        <li><a href="#">Home</a></li>
+        <li><a href="#aboutSection">About me</a></li>
+        <li><a href="#interestsSection">Interests</a></li>
+        <li><a href="#projectsSection">Projects</a></li>
+      </div>
     </ul>
   </nav>
-
+  
   <main>
     <section>
-      <div id="aboutSection">
-        <article>
-          <h1>About me</h1>
-          <img src="img/ester.jpg" alt="fotoEster">
-          <p>
-            Hello! I'm Ester and I'm 23 years old. I live in Terrassa and I've studied audiovisual communication, but now I'm learning to code because I want to work as a programmer.
-          </p>
+      <div class="aboutSection">
+          <div class="containerAbout"><h2>About me</h2></div>
+          <article>
+          <div class ="containerAbout">
+          <div class="imageEster"><img src="./img/ester.jpg" alt="fotoEster"></div>
+          <p> Hello! I'm Ester and I'm 23 years old. I live in Terrassa and I've studied audiovisual communication, but now I'm learning to code because I want to work as a programmer. I've tried on my own to be a programmer, and, as you can see, I didn't have success because if I had it I wouldn't be here.</p>
+          </div>
         </article>
       </div>
     </section>
 
     <section>
-        <div id="interestsSection">
-          <h1>Interests</h1>
-          <ul>
-            <li>Videogames</li>
-            <li>Make videogames</li>
-            <li>Fantasy and science-fiction</li>
-            <li>Skate in line</li>
-          </ul>
-          <img src="img/interests.jpg" alt="interests">
-          
+        <div class="interestsSection">
+          <div class="containerInterests">
+            <div class= "interestsText">
+            <h2>Interests</h2>
+            <ul>
+              <li>Videogames</li>
+              <li>Make videogames (some day I will be rich and famous)</li>
+              <li>Fantasy and science-fiction</li>
+              <li>DIY (it relaxes me but I don't have so much time for that, so I haven't been relaxed for a while) </li>
+              <li>Skate in line</li>
+            </ul>
+          </div>
+            <div class="imageInterest">
+              <img src="./img/interests1.jpg" alt="interests">
+              <p>This is not me but we have similar techniques</p>
+            </div>
+          </div>
         </div>
     </section>
 
     <section>
-        <div id="projectsSection">
-          <h1>Projects</h1>
+        <div class="projectsSection">
+          <h2>Projects</h2>
           <ul>
             <li>Slack web clone</li>
-            <li>(More soon)</li>
+            <li>My own web's page</li>
           </ul>
         </div>
     </section>
-
+    
     <section>
-      <div id="contactSection">
+      <div class="contactSection">
         <h2>Contact me</h2>
         <form>
           <div><input type="email" placeholder="Email"></div>
           <div><input type="text" placeholder="Your name"></div>
           <div><textarea placeholder="Your message"></textarea></div>
-          <div><button type="submit">Send</button></div>
+          <div class="containerSubmit"><button type="submit" class="button" id="submitButton">Send</button></div>
         </form>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>Ester Fernández 2019</p>
+    <p class="textFooter">&copy Ester Fernández 2019</p>
   </footer>
 
 </body>
