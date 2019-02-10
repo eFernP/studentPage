@@ -122,15 +122,6 @@ p {
    
   }
 
-  .containerInterests{
-    display: flex;
-    flex-direction: column;
-    
-  }
-
-  
-  
-
   .imageInterest img{
     width: 300px;
     height: auto;
@@ -187,12 +178,13 @@ p {
     padding: 30px 5%;
    
   }
+  
 
   .containerInterests{
     display: flex;
     flex-direction: row;
   }
-  
+
   .imageInterest img{
     width: 350px;
     height: auto;
