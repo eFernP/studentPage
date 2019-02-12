@@ -9,7 +9,7 @@
 
 <body>
   <header>
-        <h1>Welcome to Ester's page</h1>
+        <h1>Ester</h1>
   </header>
   <nav>
     <ul>
@@ -23,61 +23,40 @@
   </nav>
   
   <main>
-    <section>
-      <div class="aboutSection">
-          <div class="containerAbout"><h2>About me</h2></div>
-          <article>
-          <div class ="containerAbout">
-          <div class="imageEster"><img src="./img/ester.jpg" alt="fotoEster"></div>
-          <p> Hello! I'm Ester and I'm 23 years old. I live in Terrassa and I've studied audiovisual communication, but now I'm learning to code because I want to work as a programmer. I've tried on my own to be a programmer, and, as you can see, I didn't have success because if I had it I wouldn't be here.</p>
-          </div>
-        </article>
-      </div>
+    <section id="aboutSection">
+          <h2>About me</h2>
+          <article class ="containerAbout">
+          <div class="imageEster"><img src="./img/ester.jpg" alt="fotoEster" style="border-radius=50%"></div>
+          <p id="infoText">Hello! I'm Ester and I'm 23 years old. I live in Terrassa and I've studied audiovisual communication, but now I'm learning to code because I want to work as a programmer. I've tried on my own to be a programmer, and, as you can see, I didn't have success because if I had it, I wouldn't be here! :)</p>
+          </article>
     </section>
-
-    <section>
-        <div class="interestsSection">
-          <div class="containerInterests">
-            <div class= "interestsText">
-            <h2>Interests</h2>
-            <ul>
-              <li>Videogames</li>
-              <li>Make videogames (some day I will be rich and famous)</li>
-              <li>Fantasy and science-fiction</li>
-              <li>DIY (it relaxes me but I don't have so much time for that, so I haven't been relaxed for a while) </li>
-              <li>Skate in line</li>
-            </ul>
-          </div>
-            <div class="imageInterest">
-              <div class="imageSrc">
-              <img src="./img/interests1.jpg" alt="interests">
-              </div>
-              <p>This is not me but we have similar techniques</p>
-            </div>
-          </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="projectsSection">
+    <section id="newInterestsSection">
+    <h2>Interests</h2>
+    <div class="interestsContainer">
+        <button id="interest1"></button>
+        <button id="interest2"></button>
+        <button id="interest3"></button>
+        <button id="interest4"></button>
+    </div>
+  </section>
+    <section id="projectsSection">
           <h2>Projects</h2>
           <ul>
             <li>My own web page</li>
             <li>(More soon)</li>
           </ul>
-        </div>
     </section>
     
-    <section>
-      <div class="contactSection">
+    <section id="contactSection">
         <h2>Contact me</h2>
+        <div class="form">
         <form>
           <div><input type="email" placeholder="Email"></div>
           <div><input type="text" placeholder="Your name"></div>
           <div><textarea placeholder="Your message"></textarea></div>
-          <div class="containerSubmit"><button type="submit" class="button" id="submitButton">Send</button></div>
+          <div class="containerSubmit"></div><button type="submit" class="button" id="submitButton">Send</button></div>
         </form>
-      </div>
+        </div>
     </section>
   </main>
 
@@ -85,6 +64,7 @@
     <p class="textFooter">&copy Ester Fernández 2019</p>
   </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>
 

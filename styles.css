@@ -1,17 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
-@import url('https://fonts.googleapis.com/css?family=The+Girl+Next+Door');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:200');
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
 
-/* ---- reset ---- */
 
-/*
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}*/
 
 body {
   margin: 0;
@@ -23,21 +14,21 @@ html{
   width: 100%;
 }
 
-/* ---- typography ---- */
 
 body {
-  color: #111;
+  color: rgb(27, 27, 27);
   font-family: Raleway, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 2;
-  background-color: rgb(253, 238, 240);;
+  background-color: rgb(255, 237, 233);;
   
 }
 
 h1 {
-  font-family: Work Sans, Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  font-size: 2em;
+  font-family: Sacramento, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 120px;
+  color: rgb(37, 30, 30);
   
 }
 
@@ -45,7 +36,7 @@ h1 {
 h2{
   font-family: Work Sans, Helvetica, Arial, sans-serif;
   font-weight: 200;
-  font-size: 2em;
+  font-size: 50px;
 }
 
 
@@ -53,36 +44,45 @@ p {
   margin: 0;
 }
 
-.container{
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-
-
-/* ---- layout ---- */
-
-
-.section {
-  margin-bottom: 20px;
-  padding-top: 20px;
-}
-
-
-
-/* ---- components ---- */
 
 .button {
   width: 100%;
-  background-color: blue;
   color: #fff;
-  border: 1px solid #fff
+  border: none;
 }
 
 
 /*---------My code--------*/
 
 @media (max-width: 819px) {
+
+  #aboutSection{
+    display: grid;
+    grid-auto-rows: 10% 90%;
+    justify-items: center;
+  }
+  
+  .containerAbout h2{
+    grid-row: 1/2;
+   
+  }
+  
+  .containerAbout{
+    display: grid;
+    padding: 0 20%;
+    grid-row: 2/4;
+    
+  }
+  
+  .imageEster{
+    justify-self: flex-end;
+    margin: 0 20px;
+  }
+  
+  .containerAbout p{
+    margin: 10px;
+    padding: 25px;
+  }
 
   .containerAbout{
     display: flex;
@@ -99,44 +99,78 @@ p {
     margin: 20px 0;
   }
 
-  header{
-    display:flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    align-content: center;
-  }
-  
-  header h1{
-    font-size: 40px;
-    color: rgb(112, 87, 87);
-    text-align: center;
-  }
 
   nav li{
     margin: 0 10px;
     letter-spacing: 1px;
   }
 
-  .interestsSection{
-    padding: 30px 5%;
-   
+  #newInterestsSection{
+    display: grid;
+    grid-auto-rows: 20% 80%;
+    justify-items: center;
+  
+  }
+  
+  #newInterestsSection h2{
+    grid-row: 1/2;
   }
 
+
+  .interestsContainer{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-size: cover;
+    grid-row: 2/3;
+    grid-auto-rows: 25% 25% 25% 25%;
+  }
   
-  .imageSrc{
-    display: flex;
-    justify-content: center;
+  .interestsContainer button{
+    height: 150px;
+    width: 200px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 10px;
+  }
+  
+  
+  #interest1{
+   
+    background-color: white;
+    grid-row: 1/2;
+    background-image: url("img/pattern1.png");
+    background-size: cover;
     
   }
-  .imageInterest img{
-    height: 250px;
-    width: auto;
+  
+  #interest2{
+    
+    background-color: white;
+    grid-row: 2/3;
+    background-image: url("img/pattern2.png");
+    background-size: cover;
+    
+  }
+  
+  #interest3{
+   
+    background-color: white;
+    grid-row: 3/4;
+    background-image: url("img/pattern3.png");
+    background-size: cover;
+  }
+  
+  #interest4{
+   
+    background-color: white;
+    grid-row: 4/5;
+    background-image: url("img/pattern4.png");
+    background-size: cover;
   }
 
-  .imageInterest p{
-    display: flex;
-    justify-content: center;
-  }
+
 
   textarea{
     width: 250px;
@@ -146,7 +180,7 @@ p {
    
   }
 
-  .contactSection{
+  #contactSection{
     
     padding: 0 5%;
     margin: 0;
@@ -156,102 +190,120 @@ p {
 
 }
 
-@media (min-width: 820px) and (max-width: 1200px) {
 
-  .containerAbout{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 90%;
-    padding: 0 10%;
-    
-  }
-
-  header{
-    display:flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    align-content: center;
+@media (min-width: 820px) {
+  #aboutSection{
+    display: grid;
+    grid-auto-rows: 30% 70%;
+    justify-items: center;
   }
   
-  header h1{
-    font-size: 60px;
-    color: rgb(112, 87, 87);
-    text-align: center;
-  }
-
-  nav li{
-    margin: 0 10px;
-    letter-spacing: 2px;
-  }
-
-  .interestsSection{
-    padding: 30px 5%;
+  .containerAbout h2{
+    grid-row: 1/2;
    
   }
   
-
-  .containerInterests{
-    display: flex;
-    flex-direction: row;
-  }
-
-  .imageInterest img{
-    width: 350px;
-    height: auto;
-    
-  }
-
-  .contactSection{
-    margin-top: 100px;
+  .containerAbout{
+    display: grid;
+    grid-auto-columns: 50% 50%;
     padding: 0 20%;
-    margin-bottom: 75px;
-  }
-
-  textarea{
-    width: 400px;
-    max-width: 400px;
-    height:200px;
-    max-height: 200px;
-   
-  }
-
-}
-
-@media (min-width: 1201px) {
-  .containerAbout{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 50%;
-  }
-
-  header{
-    display:flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    align-content: center;
+    grid-row: 2/3;
+    
   }
   
-  header h1{
-    font-size: 60px;
-    color: rgb(112, 87, 87);
-    text-align: center;
+  .imageEster{
+    grid-column: 1/2;
+    justify-self: flex-end;
+    margin: 0 20px;
   }
+  
+  .containerAbout p{
+    grid-column: 2/2;
+    padding: 25px;
+  }
+
+
 
   nav li{
     margin: 0 10px;
     letter-spacing: 2px;
   }
 
-  .interestsSection{
+  #interestsSection{
     padding: 30px 10%;
+    display: flex;
+    flex-direction: row;
    
   }
 
-  .containerInterests{
-    display: flex;
-    flex-direction: row;
+  #newInterestsSection{
+    display: grid;
+    grid-auto-rows: 20% 80%;
+    justify-items: center;
+  
+  }
+  
+  #newInterestsSection h2{
+    grid-row: 1/2;
+    
+  
+  }
+  
+  .interestsContainer{
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-auto-columns: 50% 50%;
+    grid-auto-rows: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    background-size: cover;
+    grid-row: 2/3;
+  }
+  
+  .interestsContainer button{
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  #interest1{
+    background-color: white;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url("img/pattern1.png");
+    background-size: cover;
+    
+  }
+  
+  #interest2{
+    background-color: white;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url("img/pattern2.png");
+    background-size: cover;
+    
+  }
+  
+  #interest3{
+   
+    background-color: white;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-image: url("img/pattern3.png");
+    background-size: cover;
+  }
+  
+  #interest4{
+   
+    background-color: white;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-image: url("img/pattern4.png");
+    background-size: cover;
   }
 
   .imageInterest img{
@@ -268,27 +320,48 @@ p {
   
   }
 
-  .contactSection{
+  #contactSection{
+    display: flex;
     margin-top: 100px;
     padding: 0 20%;
     margin-bottom: 75px;
+    justify-content: center;
+    flex-direction: column;
   }
 
+  #contactSection h2{
+    text-align: center;
+  }
+
+  .form{
+    display: flex;
+    justify-content: center;
+    
+  }
   
 }
 
 
-.container{
-  display: flex;
+header{
+  background-image: url("img/flowers2.jpg");
+  background-size: cover;
+  height: 250px;
 }
+
+header h1{
+  text-align: center;
+  margin: 0;
+
+}
+
 
 nav{
-  background-color: rgb(207, 141, 158);
+  background-color: rgb(216, 116, 103);
   height: 75px;
   margin: 0;
   margin-bottom: 100px;
   font-family: Work Sans, Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  font-weight: 400;
 }
 .navContainer{
   height: 75px;
@@ -329,58 +402,31 @@ nav li a:hover{
 
 
 
-article{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
 
-
-.container h1{
-  display: flex;
-  justify-self: center;
-}
-
-
-
-.containerAbout img{
-  display: flex;
-  margin-right: 50px;
-}
-
-.containerAbout p{
-  display: flex;
-}
-
-
-.interestsSection{
-  margin-top: 100px;
-  background-color: rgb(255, 117, 124);
+#infoButton{
+  width: 200px;
+  height: 50px;
+  background-color: rgb(248, 117, 124);
+  font-size: 1.2em;
   color: white;
- 
+  font-weight: 600;
+  border-radius: 3px;
+  transition-duration: 2s; 
+  border: none;
 }
 
-.interestsText h1{
-  color: white;
+#infoButton:hover{
+  background-color: rgb(255, 153, 158);
+  font-size: 1.2em;
 }
 
 
-.imageInterest{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  margin: 5%;
-}
-
-.imageInterest p{
-  font-style: italic;
-}
-
-.projectsSection{
-  margin-top: 100px;
-  padding: 0 20%;
+#projectsSection{
+  margin: 50px 0;
+  padding: 5%;
+  height: 300px;
+  background-color: #ffa59c;
 }
 
 .containerLine{
@@ -397,11 +443,6 @@ article{
   margin-top: 100px;
   width: 75%;
 
-}
-
-.contactSection{
-  margin-top: 100px;
-  margin-bottom: 75px;
 }
 
 
@@ -430,16 +471,15 @@ textarea{
 }
 
 .containerSubmit{
-  display: flex;
-  width: 60%;
-  justify-content: flex-end;
+  display: grid;
+  justify-items: center;
+  width: 100%;
 }
 
 #submitButton{
-  
   width: 90px;
   height: 50px;
-  background-color: rgb(248, 117, 124);
+  background-color: rgb(216, 116, 103);
   font-size: 1.2em;
   color: white;
   font-weight: 600;
@@ -448,13 +488,41 @@ textarea{
 }
 
 #submitButton:hover{
-  background-color: rgb(255, 153, 158);
+  background-color: rgb(255, 172, 158);
   font-size: 1.2em;
+}
+
+#contactSection{
+  display: flex;
+  margin-top: 50px;
+  padding: 0 20%;
+  margin-bottom: 100px;
+  justify-content: center;
+  flex-direction: column;
+
+
+}
+
+#contactSection h2{
+  text-align: center;
+  
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  background-image: url("img/pattern6.png");
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
 footer{
-  background-color: rgb(207, 141, 158);
+  font-family: Work Sans, Helvetica, Arial, sans-serif;
+  background-color: rgb(216, 116, 103);
   height: 50px;
   font-weight: 700;
   color: white;
@@ -466,3 +534,4 @@ footer{
 .textFooter{
   align-self: center;
 }
+
